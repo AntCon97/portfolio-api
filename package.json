@@ -1,8 +1,8 @@
 {
-  "name": "nodejsapifile",
+  "name": "portfolioapi",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/mpineault/nodejsapifile",
+  "repository": "",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
