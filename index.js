@@ -2,7 +2,7 @@
 const fs = require('fs');
 const express = require('express');
 const app = express();
-const port = `5001`;
+const port = `https://antcon97.github.io/portfolio-api/`;
 const cors = require('cors');
 
 // LOAD LIBRARIES
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
       );
     })
       // Validate if the files exists
-      .then(file => {
+      .then((file) => {
         return new Promise((resolve, reject) => {
           if (fs.existsSync(`./files/${file}`)) {
             return resolve(`./files/${file}`);
@@ -37,13 +37,13 @@ app.get('/', (req, res) => {
         });
       })
       // Return the file to download
-      .then(filePath => {
+      .then((filePath) => {
         res.download(filePath);
       })
       // Catches errors and displays them
-      .catch(e => {
+      .catch((e) => {
         res.status(400).send({
-          message: e
+          message: e,
         });
       })
   );
