@@ -2,11 +2,12 @@
 const fs = require('fs');
 const express = require('express');
 const app = express();
-const port = `https://antcon97.github.io/portfolio-api/`;
+const port = `5001`;
 const cors = require('cors');
 
 // LOAD LIBRARIES
 app.use(cors());
+header('Access-Control-Allow-Origin: *');
 
 // API ENDPOINTS
 app.get('/', (req, res) => {
