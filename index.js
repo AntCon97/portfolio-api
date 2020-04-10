@@ -7,7 +7,6 @@ const cors = require('cors');
 
 // LOAD LIBRARIES
 app.use(cors());
-header('Access-Control-Allow-Origin: *');
 
 // API ENDPOINTS
 app.get('/', (req, res) => {
